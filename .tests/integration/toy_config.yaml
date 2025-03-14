@@ -1,0 +1,4 @@
+conditions: ["toy"]
+reads_dir: "tests/integration/toy_reads"
+results: "test_results"
+replicates: ["1", "2"]

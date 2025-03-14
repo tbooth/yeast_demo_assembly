@@ -1,0 +1,8 @@
+reads_dir: "reads"
+conditions:
+    ref:
+      replicates: ["1", "2", "3"]
+    etoh60:
+      replicates: ["1", "2"]
+    temp33:
+      replicates: ["2", "3"]
