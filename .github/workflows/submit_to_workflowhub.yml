@@ -1,0 +1,19 @@
+name: Workflow publishing on dev.WorkflowHub.eu
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  wfh-submit:
+    name: dev.WorkflowHub.eu submission
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Submit workflows
+        uses: workflowhub-eu/submission-action@v0
+        env:
+          API_TOKEN: ${{ secrets.DEV_WORKFLOWHUB_API_TOKEN }}
+        with:
+          team_id: 58
+          instance: https://dev.workflowhub.eu

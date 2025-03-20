@@ -1,0 +1,154 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "ro-crate-preview.html",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        }
+      ],
+      "mainEntity": {
+        "@id": "workflow/Snakefile"
+      },
+      "author": [
+        {
+          "@id": "#creator-1"
+        }
+      ],
+      "license": "MIT",
+      "identifier": "https://dev.workflowhub.eu/workflows/1406?version=2",
+      "url": "https://dev.workflowhub.eu/workflows/1406/ro_crate?version=2",
+      "name": "Research Object Crate for Demo de-novo assembly workflow",
+      "description": "This workflow assembles short reads by running the obsolete Velvet assembler. It performs           \r\nthe same assembly on every sample with different k-mer length settings, and reports the longest     \r\ncontig in each case.\r\n",
+      "isBasedOn": "https://tbooth.github.io/snakemake-publishing",
+      "sdDatePublished": "2025-03-19 18:51:44 +0000",
+      "hasPart": [
+        {
+          "@id": "workflow/Snakefile"
+        },
+        {
+          "@id": "images/rulegraph.svg"
+        }
+      ]
+    },
+    {
+      "@id": "workflow/Snakefile",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "contentSize": 2289,
+      "programmingLanguage": {
+        "@id": "#snakemake"
+      },
+      "image": {
+        "@id": "images/rulegraph.svg"
+      },
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE/",
+      "description": "This workflow assembles short reads by running the obsolete Velvet assembler. It performs           \r\nthe same assembly on every sample with different k-mer length settings, and reports the longest     \r\ncontig in each case.\r\n",
+      "name": "Demo de-novo assembly workflow",
+      "url": "https://dev.workflowhub.eu/workflows/1406?version=2",
+      "keywords": "",
+      "version": 2,
+      "license": "https://spdx.org/licenses/MIT",
+      "creator": [
+        {
+          "@id": "#Timothy%20Booth"
+        },
+        {
+          "@id": "#BioFAIR"
+        }
+      ],
+      "producer": {
+        "@id": "https://dev.workflowhub.eu/projects/58"
+      },
+      "dateCreated": "2025-03-19T14:58:33Z",
+      "dateModified": "2025-03-19T14:58:33Z",
+      "isPartOf": [
+
+      ],
+      "isBasedOn": "https://dev.workflowhub.eu/workflows/1406?version=1",
+      "input": [
+
+      ],
+      "output": [
+
+      ],
+      "sdPublisher": {
+        "@id": "http://about.workflowhub.eu"
+      }
+    },
+    {
+      "@id": "images/rulegraph.svg",
+      "@type": [
+        "File",
+        "ImageObject",
+        "WorkflowSketch"
+      ],
+      "contentSize": 11659
+    },
+    {
+      "@id": "#creator-1",
+      "@type": "Person",
+      "name": "BioFAIR"
+    },
+    {
+      "@id": "#Timothy Booth",
+      "@type": "Person",
+      "name": "Timothy Booth"
+    },
+    {
+      "@id": "#BioFAIR",
+      "@type": "Person",
+      "name": "BioFAIR"
+    },
+    {
+      "@id": "https://dev.workflowhub.eu/projects/58",
+      "@type": [
+        "Project",
+        "Organization"
+      ],
+      "name": "Submission Tutorial"
+    },
+    {
+      "@id": "#snakemake",
+      "@type": "ComputerLanguage",
+      "name": "Snakemake",
+      "identifier": {
+        "@id": "https://doi.org/10.1093/bioinformatics/bts480"
+      },
+      "url": {
+        "@id": "https://snakemake.readthedocs.io"
+      }
+    },
+    {
+      "@id": "http://about.workflowhub.eu",
+      "@type": "Organization",
+      "name": "WorkflowHub",
+      "url": "http://about.workflowhub.eu"
+    }
+  ]
+}
