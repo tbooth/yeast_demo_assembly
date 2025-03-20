@@ -21,7 +21,7 @@ rule cutadapt:
         read2 = READS_DIR + "/{sample}_2.fq",
     log: "logs/cutadapt_{sample}.log"
     params:
-        adapter = "AGATCGGAAGAGC"
+        adapter = config.get(adapter, "AGATCGGAAGAGC")
     conda: "envs/assembly_conda_env.yaml"
     shell:
         """exec >{log} 2>&1
